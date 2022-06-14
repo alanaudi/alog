@@ -1,7 +1,5 @@
 {
-  "name": "turbo",
-  "version": "0.0.0",
-  "private": true,
+  "name": "root",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -12,11 +10,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
-  },
+  "devDependencies": {},
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
