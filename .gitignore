@@ -7,8 +7,15 @@ node_modules/
 *.log*
 
 # local env files
+.env
 .env.*
 !.env.example
 
 # turbo
 .turbo
+
+# cache
+/.svelte-kit
+
+# build
+/build
