@@ -15,7 +15,7 @@ node_modules/
 .turbo
 
 # cache
-/.svelte-kit
+.svelte-kit/
 
 # build
 /build
