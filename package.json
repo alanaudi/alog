@@ -10,7 +10,10 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,svelte,md}\""
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "2.7.0",
+    "turbo": "1.2.16"
+  },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
