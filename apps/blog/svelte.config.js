@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-auto'
 import preprocess from 'svelte-preprocess'
+import Unocss from 'unocss/vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -17,6 +18,11 @@ const config = {
     adapter: adapter(),
 
     vite: {
+      plugins: [
+        Unocss({
+          /* options */
+        }),
+      ],
       css: {
         preprocessorOptions: {
           scss: {
