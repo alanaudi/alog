@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "prettier": "2.7.0",
+    "rimraf": "^3.0.2",
     "turbo": "1.2.16"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.2.1"
 }

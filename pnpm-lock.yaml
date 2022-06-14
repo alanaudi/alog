@@ -4,10 +4,12 @@ importers:
 
   .:
     specifiers:
-      prettier: latest
-      turbo: latest
+      prettier: 2.7.0
+      rimraf: ^3.0.2
+      turbo: 1.2.16
     devDependencies:
       prettier: 2.7.0
+      rimraf: 3.0.2
       turbo: 1.2.16
 
   apps/blog:
