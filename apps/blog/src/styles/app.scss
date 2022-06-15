@@ -12,3 +12,7 @@
     --fg-color: #ffffff;
   }
 }
+
+#app {
+  @apply min-h-screen flex flex-col;
+}
