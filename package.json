@@ -10,7 +10,9 @@
     "lint": "turbo run lint",
     "format": "turbo run format",
     "clean": "turbo run clean",
-    "clean:all": "rimraf **/node_modules/ **/.svelte-kit/"
+    "clean:all": "rimraf **/node_modules/ **/.svelte-kit/",
+    "changeset": "changeset",
+    "bump": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.0",
