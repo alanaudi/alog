@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "blog": "1.0.0-next.0"
+  },
+  "changesets": [
+    "wet-avocados-complain"
+  ]
+}
