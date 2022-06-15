@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ALOG_VERSION } from '$lib/utils'
+  import { ALOG_VERSION } from '$utils'
 </script>
 
 <h1 class="font-bold text-4xl">Welcome to SvelteKit</h1>
