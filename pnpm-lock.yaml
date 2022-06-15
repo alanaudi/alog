@@ -21,6 +21,8 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.27.0
       '@typescript-eslint/parser': ^5.27.0
       '@unocss/reset': ^0.39.0
+      '@unocss/transformer-directives': ^0.39.0
+      '@unocss/transformer-variant-group': ^0.39.0
       eslint: ^8.16.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-svelte3: ^4.0.0
@@ -40,6 +42,8 @@ importers:
       '@sveltejs/kit': 1.0.0-next.350_sass@1.52.3+svelte@3.48.0
       '@typescript-eslint/eslint-plugin': 5.28.0_7yumg2qjgbp7maccqlfhx2vudu
       '@typescript-eslint/parser': 5.28.0_ud6rd4xtew5bv4yhvkvu24pzm4
+      '@unocss/transformer-directives': 0.39.0
+      '@unocss/transformer-variant-group': 0.39.0
       eslint: 8.17.0
       eslint-config-prettier: 8.5.0_eslint@8.17.0
       eslint-plugin-svelte3: 4.0.0_3aft6623ti3qaietkx5ojwfh2e
