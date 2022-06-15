@@ -4,6 +4,6 @@
   export let as: 'a' | 'button'
 </script>
 
-<Button {as} {...$$restProps}>
+<Button class="nav-link" {as} {...$$restProps}>
   <slot />
 </Button>

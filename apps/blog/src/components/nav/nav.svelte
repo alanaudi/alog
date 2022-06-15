@@ -16,7 +16,7 @@
 </script>
 
 <nav bind:offsetHeight={$navHeight}>
-  <a href="/">Logo</a>
+  <a class="logo" href="/">Logo</a>
   <ul class="nav-link-container">
     {#each navLinks as { title, href } (title)}
       <li>
