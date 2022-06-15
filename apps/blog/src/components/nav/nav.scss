@@ -1,0 +1,7 @@
+nav {
+  @apply flex p-10 sm:(px-24) items-center justify-between transition-all duration-200;
+
+  & .nav-link-container {
+    @apply flex space-x-10 md:(bg-red-100);
+  }
+}

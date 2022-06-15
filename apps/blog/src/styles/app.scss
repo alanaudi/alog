@@ -4,6 +4,11 @@
  * are available here without importing !
  */
 
-h1 {
-  color: $primary;
+:root {
+  .light & {
+    --primary-color: #0070f3;
+    --secondary-color: #f5f5f5;
+    --bg-color: #000000;
+    --fg-color: #ffffff;
+  }
 }

@@ -1,17 +1,24 @@
 <script lang="ts">
   import { ALOG_VERSION } from '$utils'
+  import { Footer, Nav } from '$components'
+  import { footerHeight, navHeight } from '$stores'
 </script>
 
-<h1 class="font-bold text-4xl">Welcome to SvelteKit</h1>
-<p class="font-semibold text-2xl">
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
-<p>App Version: {ALOG_VERSION}</p>
+<Nav />
+<main
+  style={`--current-nav-height: ${$navHeight}px;` +
+    `--current-footer-height: ${$footerHeight}px;`}
+  class="grid place-items-center"
+>
+  <p class="">App Version: {ALOG_VERSION}</p>
+</main>
+<Footer />
 
 <style lang="scss">
-  p {
-    & a {
-      color: $secondary;
-    }
+  main {
+    @apply bg-black/10;
+    min-height: calc(
+      100vh - var(--current-nav-height) - var(--current-footer-height)
+    );
   }
 </style>
