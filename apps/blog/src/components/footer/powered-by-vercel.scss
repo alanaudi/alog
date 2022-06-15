@@ -1,0 +1,21 @@
+.powered-by-vercel {
+  /*
+    * Vercel Logo
+    *
+    * DISCLAIMER:
+    * Original vercel logo colors are "#000000" and "#ffffff",
+    * the modification here is to match the alog theme
+    */
+  .light & {
+    --powered-by-vercel-bg: #000000;
+    --powered-by-vercel-text: #ffffff;
+    --powered-by-vercel-icon: #ffffff;
+    --powered-by-vercel-stroke: #3d3d3d;
+  }
+  .dark & {
+    --powered-by-vercel-bg: #ffffff;
+    --powered-by-vercel-text: #000000;
+    --powered-by-vercel-icon: #000000;
+    --powered-by-vercel-stroke: #d7d7d7;
+  }
+}
