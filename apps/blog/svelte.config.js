@@ -24,6 +24,7 @@ const config = {
     adapter: adapter(),
     alias: {
       $components: './src/components',
+      $ui: './src/ui',
       $utils: './src/utils',
     },
     vite: {
