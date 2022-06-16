@@ -20,6 +20,8 @@
    */
   let className: string | null = null
 
+  export let style: string | null = null
+
   export { className as class }
 
   onMount(async () => {
@@ -30,7 +32,7 @@
 </script>
 
 {#if Icon}
-  <span class={className}>
+  <span class={className} {style}>
     <svelte:component this={Icon} />
   </span>
 {:else}

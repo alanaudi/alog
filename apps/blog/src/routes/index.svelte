@@ -11,7 +11,7 @@
     },
     {
       name: 'unocss',
-      icon: 'svgporn:unocss',
+      icon: 'svgporn:unocss,invert',
     },
   ]
 
