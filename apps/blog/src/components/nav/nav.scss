@@ -23,9 +23,10 @@ nav {
     }
   }
 
-  & .nav-link-container {
+
+  & ul.nav-link-container {
     @apply
-      flex space-x-6;
+      relative flex space-x-0;
 
     & li {
       @apply
@@ -36,11 +37,24 @@ nav {
           transition duration-[var(--transition-duration)]
           opacity-[var(--focusable-init-opacity)]
           sm:(px-4 py-2) rounded-md;
+      }
 
-        &:hover, &:focus, &:active {
-          @apply
-            bg-[var(--focusable-bg-color)]
-            opacity-100;
+      &:last-child {
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          pointer-events: none;
+          transition: all var(--transition-duration) ease;
+        }
+        &:after {
+          width: calc(var(--nav-indicator-radius) * 2);
+          height: calc(var(--nav-indicator-radius) * 2);
+          border-radius: 100px;
+          background-color: var(--nav-indicator-dot-color);
+          z-index: -1;
+          bottom: var(--nav-indicator-bottom);
+          left: var(--nav-indicator-dot-left);
         }
       }
     }

@@ -14,6 +14,10 @@
    */
   import 'uno.css'
   import '../styles/app.scss'
+
+  import { Footer, Nav } from '$components'
 </script>
 
+<Nav />
 <slot />
+<Footer />
