@@ -1,0 +1,43 @@
+.tag {
+  @apply
+    inline-flex items-center
+    transition duration-300
+    select-none;
+}
+
+[data-group="home-tag"] {
+
+  @apply
+    space-x-1.5
+    px-2 py-1.2
+    border-1 border-[var(--tag-border-color)]
+    ring-[var(--tag-ring-color)]
+    text-xs leading-3
+    bg-[var(--tag-bg-color)]
+    rounded-full
+    opacity-75;
+
+  &:hover, &:focus, &:active {
+    --tag-border-color: var(--fg-color);
+    @apply
+      opacity-100;
+
+    [data-theme="light"] & {
+      @apply
+        ring-1;
+    }
+    [data-theme="dark"] & {
+      @apply
+        ring-0.5;
+    }
+  }
+
+  & span:first-of-type {
+    @apply
+      w-3 h-3;
+  }
+}
+
+[data-group="post-tag"] {
+  @apply text-teal-400;
+}

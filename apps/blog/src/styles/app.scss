@@ -10,6 +10,10 @@
   --secondary-color: #f5f5f5;
   --bg-color: #ffffff;
   --fg-color: #000000;
+  --tag-bg-color: #ececec;
+  --tag-border-color: #d4d4d4;
+  --tag-ring-color: var(--fg-color);
+  --tag-ring-offset-color: var(--bg-color);
 }
 
 [data-theme="dark"]  {
@@ -17,6 +21,10 @@
   --secondary-color: #f5f5f5;
   --bg-color: #000000;
   --fg-color: #ffffff;
+  --tag-bg-color: #303030;
+  --tag-border-color: #454545;
+  --tag-ring-color: var(--fg-color);
+  --tag-ring-offset-color: var(--bg-color);
 }
 
 #app {

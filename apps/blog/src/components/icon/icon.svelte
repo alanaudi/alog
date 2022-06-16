@@ -33,4 +33,7 @@
   <span class={className}>
     <svelte:component this={Icon} />
   </span>
+{:else}
+  <!-- placeholder -->
+  <span class="w-4 h-4" />
 {/if}
