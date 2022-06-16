@@ -32,8 +32,16 @@ nav {
         flex items-center justify-center;
 
       & .nav-link {
-        @apply bg-teal-400
+        @apply
+          transition duration-[var(--transition-duration)]
+          opacity-[var(--focusable-init-opacity)]
           sm:(px-4 py-2) rounded-md;
+
+        &:hover, &:focus, &:active {
+          @apply
+            bg-[var(--focusable-bg-color)]
+            opacity-100;
+        }
       }
     }
   }
