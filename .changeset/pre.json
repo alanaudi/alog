@@ -5,6 +5,7 @@
     "blog": "1.0.0-next.0"
   },
   "changesets": [
-    "small-birds-juggle"
+    "small-birds-juggle",
+    "weak-pumpkins-happen"
   ]
 }

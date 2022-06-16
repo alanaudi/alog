@@ -1,5 +1,11 @@
 # blog
 
+## 1.0.0-next.5
+
+### Patch Changes
+
+- fix progressive nav style
+
 ## 1.0.0-next.4
 
 ### Patch Changes
