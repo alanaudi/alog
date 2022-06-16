@@ -1,3 +1,5 @@
 footer {
-  @apply sm:(p-8) flex items-center justify-between bg-sky-200;
+  @apply
+    flex items-center justify-between
+    sm:(p-8) bg-sky-200;
 }
