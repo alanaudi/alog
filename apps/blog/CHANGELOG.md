@@ -1,5 +1,11 @@
 # blog
 
+## 1.0.0-next.3
+
+### Patch Changes
+
+- add tag component
+
 ## 1.0.0-next.2
 
 ### Patch Changes
