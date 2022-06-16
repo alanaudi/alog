@@ -6,6 +6,7 @@
     * Original vercel logo colors are "#000000" and "#ffffff",
     * the modification here is to match the alog theme
     */
+  @apply rounded-lg transition duration-200;
 
   [data-theme="light"] & {
     --powered-by-vercel-bg: #000000;
@@ -14,7 +15,7 @@
     --powered-by-vercel-stroke: #3d3d3d;
 
     &:hover, &:focus, &:active {
-      @apply ring-3 ring-black rounded-lg ring-offset-3 ring-offset-white;
+      @apply ring-3 ring-black ring-offset-3 ring-offset-white;
     }
   }
 
@@ -23,5 +24,13 @@
     --powered-by-vercel-text: #000000;
     --powered-by-vercel-icon: #000000;
     --powered-by-vercel-stroke: #d7d7d7;
+
+    @apply opacity-87;
+
+    &:hover, &:focus, &:active {
+      @apply
+        opacity-100
+        ring-2 ring-white ring-offset-3 ring-offset-black;
+    }
   }
 }

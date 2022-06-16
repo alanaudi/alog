@@ -4,18 +4,27 @@
  * are available here without importing !
  */
 
-:root {
-  .light & {
-    --primary-color: #0070f3;
-    --secondary-color: #f5f5f5;
-    --bg-color: #000000;
-    --fg-color: #ffffff;
-  }
+
+[data-theme="light"]  {
+  --primary-color: #0070f3;
+  --secondary-color: #f5f5f5;
+  --bg-color: #ffffff;
+  --fg-color: #000000;
+}
+
+[data-theme="dark"]  {
+  --primary-color: #0070f3;
+  --secondary-color: #f5f5f5;
+  --bg-color: #000000;
+  --fg-color: #ffffff;
 }
 
 #app {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+
   @apply
-    min-h-[1000vh] flex flex-col;
+    min-h-[100vh] flex flex-col;
 
   & a {
     @apply outline-none;
