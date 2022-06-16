@@ -5,6 +5,18 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %sveltekit.head%
+    <script nonce="alog">
+      // Get rid of flash of unstyled content (FOUC)
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.dataset.theme = 'dark'
+      } else {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
   </head>
   <body>
     <div id="app">%sveltekit.body%</div>
