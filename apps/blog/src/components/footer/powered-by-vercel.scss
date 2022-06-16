@@ -25,7 +25,7 @@
     --powered-by-vercel-icon: #000000;
     --powered-by-vercel-stroke: #d7d7d7;
 
-    @apply opacity-87;
+    @apply opacity-[var(--focusable-init-opacity)];
 
     &:hover, &:focus, &:active {
       @apply

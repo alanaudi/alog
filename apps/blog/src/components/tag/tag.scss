@@ -15,7 +15,7 @@
     text-xs leading-3
     bg-[var(--tag-bg-color)]
     rounded-full
-    opacity-75;
+    opacity-[var(--focusable-init-opacity)];
 
   &:hover, &:focus, &:active {
     --tag-border-color: var(--fg-color);
