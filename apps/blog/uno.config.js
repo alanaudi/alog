@@ -14,7 +14,7 @@ export default defineConfig({
         sans: 'Roboto',
         mono: ['Fira Code', 'Fira Mono:400,700'],
         // custom ones
-        logo: 'Mali',
+        logo: 'Jost',
       },
     }),
   ],
