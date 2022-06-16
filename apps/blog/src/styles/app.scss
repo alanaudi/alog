@@ -3,7 +3,12 @@
  * Variables and mixins from the src/styles/variables.scss file
  * are available here without importing !
  */
-[data-theme="light"]  {
+
+:root {
+  --transition-duration: 0.2s;
+}
+
+[data-theme="light"] {
   --focusable-bg-color: #e7e7e7;
   --primary-color: #0070f3;
   --secondary-color: #f5f5f5;
@@ -13,9 +18,10 @@
   --tag-border-color: #d4d4d4;
   --tag-ring-color: var(--fg-color);
   --tag-ring-offset-color: var(--bg-color);
+  --theme-switch-border-color: #eaeaea;
 }
 
-[data-theme="dark"]  {
+[data-theme="dark"] {
   --focusable-bg-color: #363636;
   --focusable-init-opacity: 0.8;
   --primary-color: #0070f3;
@@ -26,16 +32,17 @@
   --tag-border-color: #454545;
   --tag-ring-color: var(--fg-color);
   --tag-ring-offset-color: var(--bg-color);
+  --theme-switch-border-color: #333333;
 }
 
 #app {
-  background-color: var(--bg-color);
-  color: var(--fg-color);
-
   @apply
-    min-h-[100vh] flex flex-col;
+    min-h-[100vh] flex flex-col
+    transition duration-[var(--transition-duration)]
+    bg-[var(--bg-color)]
+    text-[var(--fg-color)];
 
-  & a {
+  & a, button {
     @apply outline-none;
   }
 }

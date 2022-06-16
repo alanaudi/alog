@@ -1,8 +1,27 @@
 .theme-switch {
+  @apply
+    transition duration-[var(--transition-duration)]
+    w-40
+    p-(x-4 y-2) rounded-md
+    border-(
+      2
+      [var(--theme-switch-border-color)]
+    );
 
   [data-theme="light"] & {
+    &:hover, &:focus, &:active {
+      --theme-switch-border-color: var(--fg-color);
+    }
   }
 
   [data-theme="dark"] & {
+    @apply
+      opacity-[var(--focusable-init-opacity)];
+
+    &:hover, &:focus, &:active {
+      --theme-switch-border-color: var(--fg-color);
+      @apply
+        opacity-100;
+    }
   }
 }

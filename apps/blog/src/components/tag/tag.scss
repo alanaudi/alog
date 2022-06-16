@@ -1,7 +1,7 @@
 .tag {
   @apply
     inline-flex items-center
-    transition duration-300
+    transition duration-[var(--transition-duration)]
     select-none;
 }
 
