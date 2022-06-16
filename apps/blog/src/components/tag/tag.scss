@@ -1,16 +1,3 @@
-.tag {
-  @apply
-    inline-flex items-center
-    transition duration-[var(--transition-duration)]
-    select-none;
-}
-
-.icon {
-  @apply
-    transition duration-[var(--transition-duration)]
-    inline-flex items-center;
-}
-
 [data-group="home-tag"] {
 
   @apply
