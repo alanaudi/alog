@@ -9,10 +9,6 @@
 
   const navLinks = [
     {
-      title: 'Home',
-      href: '/',
-    },
-    {
       title: 'Blog',
       href: '/blog',
     },
@@ -30,19 +26,20 @@
     },
   ]
 
-  const handleNavClick = (e: MouseEvent) => {
-    const navLinks = document.querySelectorAll('.nav-link')
-    console.log($page.url.pathname)
+  // TODO: fancy nav inidcator
+  // const handleNavClick = (e: MouseEvent) => {
+  //   const navLinks = document.querySelectorAll('.nav-link')
+  //   console.log($page.url.pathname)
 
-    for (let i = 0; i < navLinks.length; i++) {
-      if (navLinks[i] === e.target) {
-        navLinks[i].setAttribute('aria-current', 'page')
-        currentLeft.set(e.target.offsetLeft + e.target.offsetWidth / 2)
-      } else {
-        navLinks[i].removeAttribute('aria-current')
-      }
-    }
-  }
+  //   for (let i = 0; i < navLinks.length; i++) {
+  //     if (navLinks[i] === e.target) {
+  //       navLinks[i].setAttribute('aria-current', 'page')
+  //       currentLeft.set(e.target.offsetLeft + e.target.offsetWidth / 2)
+  //     } else {
+  //       navLinks[i].removeAttribute('aria-current')
+  //     }
+  //   }
+  // }
 </script>
 
 <nav bind:offsetHeight={$navHeight}>
@@ -50,7 +47,6 @@
   <ul
     class="nav-link-container"
     style={`--nav-indicator-dot-left: ${$currentLeft}px`}
-    on:click={handleNavClick}
   >
     {#each navLinks as { title, href } (title)}
       <li>
