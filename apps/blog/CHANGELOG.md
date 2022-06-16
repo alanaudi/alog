@@ -1,5 +1,11 @@
 # blog
 
+## 1.0.0-next.4
+
+### Patch Changes
+
+- add simple layout
+
 ## 1.0.0-next.3
 
 ### Patch Changes
