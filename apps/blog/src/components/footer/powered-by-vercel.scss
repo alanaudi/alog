@@ -6,7 +6,10 @@
     * Original vercel logo colors are "#000000" and "#ffffff",
     * the modification here is to match the alog theme
     */
-  @apply rounded-lg transition duration-[var(--transition-duration)];
+  @apply
+    rounded-lg transition duration-[var(--transition-duration)]
+    mt-4
+    order-2 sm:(order-none mt-0);
 
   [data-theme="light"] & {
     --powered-by-vercel-bg: #000000;

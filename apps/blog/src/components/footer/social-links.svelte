@@ -7,7 +7,7 @@
   const rel = 'noreferrer noopener nofollow'
 </script>
 
-<ul class="flex space-x-12">
+<ul class="social-links-container">
   {#each socialLinks as { name, icon, href } (name)}
     <li>
       <a class="social-link" {href} {target} {rel}>

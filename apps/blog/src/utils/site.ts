@@ -20,3 +20,14 @@ export const socialLinks = [
     href: 'mailto:alanaudi.tw@gmail.com',
   },
 ]
+
+export const navLinks = [
+  {
+    title: 'Blog',
+    href: '/blog',
+  },
+  {
+    title: 'Bookmark',
+    href: '/bookmark',
+  },
+]

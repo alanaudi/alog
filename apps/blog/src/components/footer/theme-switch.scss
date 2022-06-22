@@ -1,8 +1,11 @@
 .theme-switch {
   @apply
     transition duration-[var(--transition-duration)]
-    w-40
+    mt-4
     p-(x-4 y-2) rounded-md
+    order-last
+    w-full
+    sm:(order-none mt-0 w-40 )
     border-(
       2
       [var(--theme-switch-border-color)]

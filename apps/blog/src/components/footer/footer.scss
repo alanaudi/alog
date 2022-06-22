@@ -1,5 +1,10 @@
 footer {
-  @apply
-    flex flex-col items-center justify-between
-    sm:(flex-row p-8);
+  & div {
+    @apply
+      m-auto p-3
+      w-1/2
+      flex flex-col items-center justify-between
+      p-(x-2 y-4)
+      sm:(flex-row p-8 w-full);
+  }
 }

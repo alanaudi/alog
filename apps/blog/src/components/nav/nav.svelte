@@ -4,27 +4,9 @@
   import { page } from '$app/stores'
   import { navHeight } from '$stores'
   import { writable } from 'svelte/store'
+  import { navLinks } from '$utils'
 
   const currentLeft = writable(0)
-
-  const navLinks = [
-    {
-      title: 'Blog',
-      href: '/blog',
-    },
-    {
-      title: 'Bookmark',
-      href: '/bookmark',
-    },
-    {
-      title: 'About',
-      href: '/about',
-    },
-    {
-      title: 'Snippet',
-      href: '/snippet',
-    },
-  ]
 
   // TODO: fancy nav inidcator
   // const handleNavClick = (e: MouseEvent) => {

@@ -1,14 +1,17 @@
-.social-link {
-  @apply
-    transition duration-[var(--transition-duration)]
-    inline-flex items-center p-3 rounded-lg
-    opacity-[var(--focusable-init-opacity)]
-    sm:(p-3) rounded-lg;
-    ;
+ul.social-links-container {
+  @apply flex space-x-4 sm:(space-x-12);
 
-  &:hover, &:focus, &:active {
+  & .social-link {
     @apply
-      bg-[var(--focusable-bg-color)]
-      opacity-100;
+      transition duration-[var(--transition-duration)]
+      inline-flex items-center rounded-lg
+      opacity-[var(--focusable-init-opacity)]
+      p-2 order-first sm:(p-3 order-none) rounded-lg;
+
+    &:hover, &:focus, &:active {
+      @apply
+        bg-[var(--focusable-bg-color)]
+        opacity-100;
+    }
   }
 }

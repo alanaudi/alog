@@ -3,18 +3,19 @@ nav {
     flex items-center justify-between
     sticky top-0
     transition-all duration-[var(--transition-duration)]
-    sm:(p-8 mt-4);
+    p-2 sm:(p-8 mt-4);
 
   & .logo {
     @apply
       transition duration-[var(--transition-duration)]
       select-none
       rounded-md
-      p-(x-4 y-2)
+      p-(x-2 y-1)
+      sm:(p-(x-4 y-2))
       uppercase
       font-(bold logo)
       opacity-[var(--focusable-init-opacity)]
-      text-4xl;
+      text-xl sm:(text-4xl);
 
     &:hover, &:focus, &:active {
       @apply
@@ -26,7 +27,7 @@ nav {
 
   & ul.nav-link-container {
     @apply
-      relative flex space-x-4;
+      relative flex space-x-1 sm:(space-x-4);
 
     & li {
       @apply
@@ -36,7 +37,7 @@ nav {
         @apply
           transition duration-[var(--transition-duration)]
           opacity-[var(--focusable-init-opacity)]
-          sm:(px-4 py-2) rounded-md;
+          p-(x-2 y-1) sm:(px-4 py-2) rounded-md;
 
         &:hover, &:focus, &:active {
           @apply

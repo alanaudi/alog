@@ -7,7 +7,9 @@
 </script>
 
 <footer bind:offsetHeight={$footerHeight}>
-  <PoweredByVercel />
-  <SocialLinks />
-  <ThemeSwitch />
+  <div>
+    <PoweredByVercel />
+    <SocialLinks />
+    <ThemeSwitch />
+  </div>
 </footer>
