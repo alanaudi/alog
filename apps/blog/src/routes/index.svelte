@@ -4,7 +4,7 @@
 </script>
 
 <Helmet title="Home" />
-<main>
+<main class="home-page">
   <div>
     <div>
       <h1 class="gradient-text">I'm Alanaudi.</h1>
