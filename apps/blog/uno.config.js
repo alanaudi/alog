@@ -15,6 +15,7 @@ export default defineConfig({
         mono: ['Fira Code', 'Fira Mono:400,700'],
         // custom ones
         logo: 'Jost',
+        number: 'M PLUS 1p',
       },
     }),
   ],

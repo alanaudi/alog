@@ -1,0 +1,16 @@
+main.error-page {
+  @apply
+    flex flex-col space-y-10 items-center justify-center flex-1;
+
+  & h1 {
+    [data-theme="dark"] & {
+      @apply opacity-[var(--dark-mode-opacity)];
+    }
+    &:first-of-type {
+      @apply font-bold text-5xl sm:(font-black text-9xl) font-number;
+    }
+    &:last-of-type {
+      @apply font-semibold text-xl sm:(font-bold text-3xl);
+    }
+  }
+}
