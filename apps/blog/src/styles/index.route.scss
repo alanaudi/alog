@@ -17,7 +17,7 @@ main {
       & h1 {
         @apply
           transition duration-[var(--transition-duration)]
-          font-black text-5xl sm:(text-7xl) lg:(text-9xl) opacity-[var(--dark-mode-opacity)];
+          font-black text-4xl sm:(text-7xl) lg:(text-9xl) opacity-[var(--dark-mode-opacity)];
       }
     }
   }
@@ -27,6 +27,7 @@ main {
   [data-theme="light"] & {
     // color: transparent;
     background: linear-gradient(90deg, rgba(0,65,106,1) 0%, rgba(0,65,106,0.8) 43%, rgba(88,88,88,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

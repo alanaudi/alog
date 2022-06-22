@@ -2,7 +2,7 @@ footer {
   & div {
     @apply
       m-auto p-3
-      w-1/2
+      w-2/3
       flex flex-col items-center justify-between
       p-(x-2 y-4)
       sm:(flex-row p-8 w-full);

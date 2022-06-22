@@ -4,8 +4,8 @@
     mt-4
     p-(x-4 y-2) rounded-md
     order-last
-    w-full
-    sm:(order-none mt-0 w-40 )
+    w-[210px]
+    sm:(order-none mt-0 w-40)
     border-(
       2
       [var(--theme-switch-border-color)]
