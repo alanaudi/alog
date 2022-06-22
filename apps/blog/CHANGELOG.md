@@ -1,5 +1,11 @@
 # blog
 
+## 1.0.0-next.6
+
+### Patch Changes
+
+- update home page style
+
 ## 1.0.0-next.5
 
 ### Patch Changes
