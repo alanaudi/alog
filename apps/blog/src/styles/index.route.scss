@@ -1,0 +1,29 @@
+main {
+  @apply
+    flex flex-1 sm:(items-center)
+    px-8;
+
+  & div {
+    @apply
+      flex flex-col items-center justify-center
+      w-full rounded-lg;
+    & div {
+      @apply flex flex-col space-y-10 w-full;
+
+      & h1 {
+        @apply
+          transition duration-[var(--transition-duration)]
+          font-black text-5xl sm:(text-7xl) lg:(text-9xl) opacity-[var(--dark-mode-opacity)];
+      }
+    }
+  }
+}
+
+.gradient-text {
+  [data-theme="light"] & {
+    // color: transparent;
+    background: linear-gradient(90deg, rgba(0,65,106,1) 0%, rgba(0,65,106,0.8) 43%, rgba(88,88,88,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

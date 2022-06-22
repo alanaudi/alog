@@ -1,0 +1,14 @@
+.social-link {
+  @apply
+    transition duration-[var(--transition-duration)]
+    inline-flex items-center p-3 rounded-lg
+    opacity-[var(--focusable-init-opacity)]
+    sm:(p-3) rounded-lg;
+    ;
+
+  &:hover, &:focus, &:active {
+    @apply
+      bg-[var(--focusable-bg-color)]
+      opacity-100;
+  }
+}
