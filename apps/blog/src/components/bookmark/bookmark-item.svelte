@@ -1,4 +1,5 @@
 <script lang="ts">
+  import './bookmark-item.scss'
   import { Icon } from '$components'
 
   export let href: string
@@ -9,11 +10,7 @@
   let customIcon: boolean = !icon.startsWith('http')
 </script>
 
-<a
-  class="flex items-center space-x-4 px-4 py-2 border-2 rounded-lg"
-  {href}
-  target="_blank"
->
+<a class="bookmark-item" {href} target="_blank">
   {#if customIcon}
     <Icon name="github" />
   {:else}
