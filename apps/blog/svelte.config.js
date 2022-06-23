@@ -29,6 +29,9 @@ const config = {
       $ui: './src/ui',
       $utils: './src/utils',
     },
+    prerender: {
+      default: true,
+    },
     vite: {
       plugins: [
         Unocss({
