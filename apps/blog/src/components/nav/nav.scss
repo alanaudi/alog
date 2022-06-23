@@ -1,7 +1,15 @@
 nav {
+  [data-theme="light"] & {
+    --bg-nav-color: rgba(255, 255, 255, 0.6)
+  }
+  [data-theme="dark"] & {
+    --bg-nav-color: rgba(0, 0, 0, 0.5)
+  }
   @apply
     flex items-center justify-between
     sticky top-0
+    bg-[var(--bg-nav-color)]
+    backdrop-blur-lg
     transition-all duration-[var(--transition-duration)]
     p-2 sm:(p-8 mt-4);
 
