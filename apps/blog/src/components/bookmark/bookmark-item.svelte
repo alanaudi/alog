@@ -12,7 +12,7 @@
 
 <a class="bookmark-item" {href} target="_blank">
   {#if customIcon}
-    <Icon name="github" />
+    <Icon class="w-8 h-8 flex items-center" name="github" />
   {:else}
     <img class="w-8 h-8" src={icon} alt={title} />
   {/if}

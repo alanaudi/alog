@@ -8,7 +8,7 @@
 <Helmet title="Bookmark" />
 <main class="flex flex-col px-8">
   <div
-    class="mt-10 grid grid-cols-1 sm:(grid-cols-2) md:(grid-cols-3) lg:(grid-cols-4) xl:(grid-cols-5) gap-8"
+    class="my-10 grid grid-cols-1 sm:(grid-cols-2) md:(grid-cols-3) lg:(grid-cols-4) xl:(grid-cols-5) gap-8"
   >
     {#each bookmarks as bookmark (bookmark.id)}
       <BookmarkItem {...bookmark} />

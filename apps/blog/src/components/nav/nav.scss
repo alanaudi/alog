@@ -5,6 +5,7 @@ nav {
   [data-theme="dark"] & {
     --bg-nav-color: rgba(0, 0, 0, 0.5)
   }
+
   @apply
     flex items-center justify-between
     z-50
